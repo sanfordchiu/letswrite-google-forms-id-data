@@ -14,26 +14,26 @@ const FormAutoFill = new Vue({
     person: {},
 
     // Google Form 的 action URL
-    formAction: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNBnd-yVJ7_-tMq5xaQrvt0j18UtabCFBTM0Eu2O3ivDecuQ/formResponse',
+    formAction: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScdlPToDt5jM0SfUvTNOlYi84HDf26aYlNrmDPZEJl2u4nVUg/formResponse',
     
     // Google Form 各個 input 的 name
     input: {
-      id: 'entry.1815052017',
-      name: 'entry.1543576845',
-      gender: 'entry.892230025',
-      phone: 'entry.1003128242',
-      site: 'entry.260985931',
-      msg: 'entry.1782841550'
+      id: 'entry.183779150',
+      name: 'entry.2087151195',
+      gender: 'entry.1686160879',
+      phone: 'entry.649505960',
+      site: 'entry.1409968564',
+      msg: 'entry.1917472401'
     },
 
     // loading 效果要不要顯示
     loading: false
   },
   methods: {
-    // ID 限填 4 碼
+    // ID 限填 7 碼
     limitIdLen(val) {
-      if(val.length > 4) {
-        return this.id =  this.id.slice(0, 4);
+      if(val.length > 7) {
+        return this.id =  this.id.slice(0, 7);
       }
     },
     // 送出表單
